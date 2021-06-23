@@ -1,0 +1,175 @@
+.containerDiv
+{
+    background-color: #95afc0;
+    height: 400px;
+    width: 350px;
+    float: right;
+    margin-right: 10%;
+    margin-top: 50px;
+    opacity: 80%;
+}
+
+
+
+.DayCalendar
+{
+    /* margin: 2px 5px 5px 0px; */
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: #ecf0f1 solid 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+}
+.DayCalendar li
+{
+list-style-type: none;
+text-align: center;
+margin-top: 15px;
+color: white;
+
+}
+.LastDay
+{
+    width: 50px;
+    height: 50px;
+    float: left;
+    border: #ecf0f1 solid 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: gray;
+    border-radius: 25px;
+}
+.LastDay li
+{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 15px;
+}
+.DayCalendarBL
+{
+    width: 50px;
+    height: 50px;
+    
+    border:#ecf0f1 solid 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ margin:  0;
+    border-radius: 25px;
+}
+.DayCalendar:hover
+{
+    background-color: #0984e3;
+    cursor: pointer;
+    color: black;
+}
+.ContainerDiv
+{
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.currentMonth
+{
+    width: 350px;
+    height: 50px;
+    background-color:#4834d4;
+    padding:  0 ;
+}
+.currentMonth ul
+{
+   margin: 0px -10px 0px 0px ;
+   font-size: 30px;
+   font-family: "Arial Black", Gadget, sans-serif;
+font-size: 31px;
+letter-spacing: 2.8px;
+word-spacing: 0px;
+color: black;
+font-weight: normal;
+text-decoration: none solid ;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+text-align: center;
+}
+.Head{
+    background-color: #0984e3;
+    height: 60px;
+
+}
+
+
+.DayCalendar
+{
+    /* margin: 2px 5px 5px 0px; */
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: #ecf0f1 solid 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+}
+.DayCalendar li
+{
+list-style-type: none;
+text-align: center;
+margin-top: 15px;
+color: white;
+
+}
+.containerDivInsertion
+{
+    background-color: #4834d4;
+    height: 400px;
+    width: 600px;
+    float: right;
+    margin-right: 10%;
+    margin-top: 50px;
+    opacity: 80%;
+}
+.containerDivInsertion div
+{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+input[type=text], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 15%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 15%;
+    background-color: #95afc0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+input[type=submit]:hover {
+    background-color: #0984e3;
+  }
+#transparency{
+    opacity: 100%;
+}
