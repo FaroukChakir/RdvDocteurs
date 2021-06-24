@@ -1,175 +1,158 @@
-.containerDiv
-{
-    background-color: #95afc0;
-    height: 400px;
-    width: 350px;
-    float: right;
-    margin-right: 10%;
-    margin-top: 50px;
-    opacity: 80%;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F0F1F6;
 }
 
-
-
-.DayCalendar
-{
-    /* margin: 2px 5px 5px 0px; */
-    width: 50px;
-    height: 50px;
-    float: left;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border: #ecf0f1 solid 1px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border-radius: 25px;
-
-}
-.DayCalendar li
-{
-list-style-type: none;
-text-align: center;
-margin-top: 15px;
-color: white;
-
-}
-.LastDay
-{
-    width: 50px;
-    height: 50px;
-    float: left;
-    border: #ecf0f1 solid 1px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    background-color: gray;
-    border-radius: 25px;
-}
-.LastDay li
-{
-    list-style-type: none;
-    text-align: center;
-    margin-top: 15px;
-}
-.DayCalendarBL
-{
-    width: 50px;
-    height: 50px;
-    
-    border:#ecf0f1 solid 1px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
- margin:  0;
-    border-radius: 25px;
-}
-.DayCalendar:hover
-{
-    background-color: #0984e3;
-    cursor: pointer;
-    color: black;
-}
-.ContainerDiv
-{
-    border-collapse: collapse;
-    overflow: hidden;
-}
 
 .currentMonth
 {
-    width: 350px;
-    height: 50px;
-    background-color:#4834d4;
-    padding:  0 ;
+  text-align: center;
+  margin : 0;
+  padding : 0;
+  transform: translate(-20px,0);
+  font-weight: bolder;
+  color : #8D8D8D;
 }
-.currentMonth ul
+#transparency
 {
-   margin: 0px -10px 0px 0px ;
-   font-size: 30px;
-   font-family: "Arial Black", Gadget, sans-serif;
-font-size: 31px;
-letter-spacing: 2.8px;
-word-spacing: 0px;
-color: black;
-font-weight: normal;
-text-decoration: none solid ;
-font-style: normal;
-font-variant: normal;
-text-transform: none;
-text-align: center;
-}
-.Head{
-    background-color: #0984e3;
-    height: 60px;
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  background-color: white;
+  grid-gap:15px;
+  width : auto;
+  padding : 15px;
+  border-top: 1px solid #F3F3F3;
 
 }
 
-
-.DayCalendar
+.LastDay button, .DayCalendar button
 {
-    /* margin: 2px 5px 5px 0px; */
-    width: 50px;
-    height: 50px;
-    float: left;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border: #ecf0f1 solid 1px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border-radius: 25px;
-
-}
-.DayCalendar li
-{
-list-style-type: none;
-text-align: center;
-margin-top: 15px;
-color: white;
+  font-weight: bold;
+  background-color: #FAFAFA;
+  width: 45px;
+  height : 45px;
+  margin : 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.05em;
+  color : #C1C4DA;
+  transition: 0.2s ease;
 
 }
-.containerDivInsertion
+
+.DayCalendar button:hover
 {
-    background-color: #4834d4;
-    height: 400px;
-    width: 600px;
-    float: right;
-    margin-right: 10%;
-    margin-top: 50px;
-    opacity: 80%;
+  background-color: #1dd1a1;
+  color : white;
+  cursor: pointer;
 }
-.containerDivInsertion div
+
+.LastDay button
 {
-    width: 100%;
-    height: 100%;
-    margin-top: 50px;
+
+  background-color: #D4D4D4;
+  color : #8D8D8D;
+
+}
+
+.containerDiv{
+  background-color: white;
+  width : 450px;
+  margin : auto;
+  border : 1px solid #EEEEEE;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.05);
+  position: absolute;
+  top : 50%;
+  right : 50px;
+  transform: translate(0,-50%);
+}
+.containerDivInputs
+{
+  background-color: white;
+  width : 450px;
+  margin : auto;
+  border : 1px solid #EEEEEE;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.05);
+  position: absolute;
+  top : 50%;
+  left : 50px;
+  transform: translate(0,-50%);
+  
+}
+.containerDivInputs div
+{
+
+  padding-left: 20%;
+}
+input[type=submit]:hover{
+  background-color: #10ac84;
+}
+input[type=submit] {
+  width: 70%;
+  
+  background-color: #1dd1a1;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 input[type=text], select {
-    width: 70%;
-    padding: 12px 20px;
-    margin: 8px 15%;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type=submit] {
-    width: 70%;
-    padding: 12px 20px;
-    margin: 8px 15%;
-    background-color: #95afc0;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
   
-input[type=submit]:hover {
-    background-color: #0984e3;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.05em;
+  font-weight: bold;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 70%;
+}
+option{
+  width: 100px;
+}
+.Head
+{
+ 
+  overflow: hidden;
+ 
+  background-color: #1dd1a1;
+  padding: 10px 5px;
+
+}
+
+.Head a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  background-color: #ee5253;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
   }
-#transparency{
-    opacity: 100%;
+  .header{
+    float: none;
+  }
 }

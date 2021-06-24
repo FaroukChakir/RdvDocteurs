@@ -2,7 +2,7 @@ import { Component } from 'react';
 import React, { useState } from 'react';
 import './CalendarCss.css';
 import { eventClick } from '@syncfusion/ej2-schedule';
-
+import logo from './Image/logo.png'
 
 export default class App extends Component
 {
@@ -18,9 +18,9 @@ export default class App extends Component
       };
 
   }
-  
 
-  
+
+
   render()
   {
 
@@ -28,7 +28,7 @@ export default class App extends Component
 
     var dt = new Date();
 
-    /* to create calendar*/ 
+    /* to create calendar*/
  var month = dt.getMonth() + 1;
  var year = dt.getFullYear();
  var daysInMonth = new Date(year, month, 0).getDate();
@@ -36,13 +36,13 @@ export default class App extends Component
  const items = [];
     /**/
 
-/*Last Day of prev month */    
+/*Last Day of prev month */
 
  var date = new Date();
 date.setMonth(date.getMonth())
 var lastDay = new Date(date.getFullYear(), date.getMonth(), 0);
 var lastDayOfLastMonth = lastDay.toISOString().substr(8, 2);
-/**/ 
+/**/
 
 /*Current Month*/
 
@@ -62,25 +62,25 @@ var today = todayDate.toISOString().substr(8,2);
    for (var i = 0 ; i<daysInMonth;i++) {
      if(i===0)
      {
-      items.push(<div className="LastDay" key={lastDayOfLastMonth}><li>{lastDayOfLastMonth}</li></div>)
-     
-     }
-     
-        items.push(<div  className="DayCalendar" key={this.state.days[i].day}><li>{this.state.days[i].day}</li></div>)
+      items.push(<div className="LastDay" key={lastDayOfLastMonth}><button disabled>{lastDayOfLastMonth}</button></div>)
 
-    
+     }
+        // if(i<today)
+
+        items.push(<div  className="DayCalendar" key={this.state.days[i].day}><button >{this.state.days[i].day}</button></div>)
+     
+
   }
 return(
-  
+
 
 <div>
   <div className="Head">
-<a href="">farouk</a>
-<a href="">farouk</a>
-<a href="">farouk</a>
+    <img src={logo} />
+<a href="">Disconnect</a>
   </div>
   <div className="containerDiv" >
-   
+
         <div className="currentMonth">
         <ul>{currentmonth}</ul>
       </div>
@@ -88,26 +88,28 @@ return(
 
         {items}
       </div>
+      
+ 
   </div>
-  <div className="containerDivInsertion" >
-    <div>
-        
-    <select id="country" name="country">
-      <option value="australia">Zonbi</option>
-      <option value="canada">Zinbi</option>
-      <option value="usa">Zanbi</option>
-    </select>
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Name" />
-        <input type="submit"/>
+  <div className="containerDivInputs" >
+<div>
 
-    </div>
-       
-        
-  </div>
+<select>
+  <option>test</option>
+  <option>test</option>
+  <option>test</option>
+  <option>test</option>
+  <option>test</option>
+</select>
+<input type="submit"/>
+</div>
+
+</div>
+  
+  
 </div>
 );
 
-  } 
+  }
 
 }
