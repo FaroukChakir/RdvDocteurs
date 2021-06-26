@@ -87,8 +87,10 @@ body {
   top: 50%;
   left: 30%;
   transform: translate(0, -50%);
+  opacity: 85%;
 }
-.Inputting div{
+
+.Inputting div {
   padding-left: 20%;
 }
 .containerDivInputs div {
@@ -143,7 +145,7 @@ option {
   font-family: "Montserrat", sans-serif;
 }
 #a1 {
-  float: left;
+  float: right;
   color: black;
   text-align: center;
   padding: 12px;
@@ -151,12 +153,12 @@ option {
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
-  background-color: #FFFF;
+  background-color: #ffff;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
 #a2 {
-  float: left;
+  float: right;
   color: black;
   text-align: center;
   padding: 12px;
@@ -164,16 +166,18 @@ option {
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
-  background-color: #FFFF;
+  background-color: #ffff;
   font-weight: bold;
-  margin-left: 20px;
+  margin-right: 20px;
   font-family: "Montserrat", sans-serif;
 }
-
-.Head img{
+body {
+  background-image: url(../Image/1010.jpg);
+  background-size: cover;
+}
+.Head img {
   float: left;
 }
-
 
 @media screen and (max-width: 500px) {
   .header a {
